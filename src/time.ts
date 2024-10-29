@@ -192,8 +192,8 @@ export class CronTime {
 	}
 
 	getTimeout2() {
-		let sendAtToMillis = this.sendAt().toMillis();
 		let localTimeToMillis = DateTime.local().toMillis();
+		let sendAtToMillis = this.sendAt().toMillis();
 		return {
 			sendAtToMillis,
 			localTimeToMillis,
